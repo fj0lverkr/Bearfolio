@@ -54,18 +54,16 @@ body {
   color: var(--vanilla-grey);
 }
 
-#nav-links {
+#nav-links a, #main-nav > .navbar-nav > h5{
+  /* color: var(--silver); */
+  color: var(--vanilla-grey);
   font-weight: 200;
 }
 
-#nav-links a{
-  /* color: var(--silver); */
-  color: var(--vanilla-grey);
-}
-
-#nav-links a:hover {
+#nav-links a:hover, #main-nav > .navbar-nav > h5:hover {
   /* color: var(--soft-gold); */
   color: var(--simpler-lime-green);
+  font-weight: 200;
 }
 
 #headings > h1 {
