@@ -74,6 +74,11 @@ body {
  color: var(--scuffed-dark-grey);
 }
 
+#about {
+  color: var(--scuffed-dark-grey);
+}
+
+/* media queries to accomodate different screensizes  */
 @media only screen and (max-width: 1600px){
   #headings > h1 {
     font-size: 7rem;
