@@ -44,13 +44,13 @@ body {
   background: var(--scuffed-dark-grey);
 }
 
-.navbar-dark .navbar-brand {
+.navbar-dark .navbar-brand, #contact-inner a {
   /* color: var(--soft-gold); */
   color: var(--simpler-lime-green);
   font-size:  1.5rem;
 }
 
-.navbar-dark .navbar-brand:hover{
+.navbar-dark .navbar-brand:hover, #contact-inner a:hover{
   /* color: var(--rose-gold); */
   color: var(--vanilla-grey);
 }
@@ -77,6 +77,19 @@ body {
 
 #about {
   color: var(--scuffed-dark-grey);
+}
+
+#contact {
+  background-image: url("imgs/3-sitting-bear.jpg");
+  height: 100%;
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: var(--vanilla-grey);
+}
+
+#contact-inner {
+    background-color: var(--scuffed-dark-grey-a0-5);
 }
 
 /* additional classes to be added with JS events */
