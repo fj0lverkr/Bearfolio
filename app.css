@@ -8,6 +8,7 @@
   /* color-scheme 'Jungle Book' */
   --simpler-lime-green: #7dce94;
   --scuffed-dark-grey: #3d3d3f;
+  --scuffed-dark-grey-a0-5: rgba(61,61,63,.5);
   --vanilla-grey: #f6f5f3;
   --white-ish: #f9f8fd;
 }
@@ -76,6 +77,12 @@ body {
 
 #about {
   color: var(--scuffed-dark-grey);
+}
+
+/* additional classes to be added with JS events */
+.navbar.scrolled {
+  background-color: var(--scuffed-dark-grey-a0-5);
+  transition: background 400ms;
 }
 
 /* media queries to accomodate different screensizes  */
