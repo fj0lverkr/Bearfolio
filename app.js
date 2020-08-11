@@ -4,6 +4,6 @@ $(function(){
   $(document).scroll(
     function(){
       var $nav = $("#main-nav");
-      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height());
+      $nav.toggleClass("scrolled", $(this).scrollTop() > $nav.height()  && $(this).scrollTop() < $(document).height() - $(window).height() - 100);
     });
 });
