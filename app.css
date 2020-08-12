@@ -7,6 +7,7 @@
 
   /* color-scheme 'Jungle Book' */
   --simpler-lime-green: #7dce94;
+  --simpler-lime-green-a0-6:  rgba(125,206,148,.6);
   --scuffed-dark-grey: #3d3d3f;
   --scuffed-dark-grey-a0-5: rgba(61,61,63,.5);
   --vanilla-grey: #f6f5f3;
@@ -97,10 +98,6 @@ body {
   transition: background 400ms;
 }
 
-input[type="checkbox"]:checked {
-      background: var(--scuffed-dark-grey);
-}
-
 /* Bootstrap overrides */
 .btn-primary{
   color: var(--vanilla-grey);
@@ -112,6 +109,15 @@ input[type="checkbox"]:checked {
   background-color: var(--vanilla-grey);
   color: var(--scuffed-dark-grey);
   border-color: var(--scuffed-dark-grey);
+}
+
+.custom-checkbox .custom-control-input:checked~.custom-control-label::before {
+  background-color:var(--scuffed-dark-grey);
+}
+
+.custom-control-input:focus~.custom-control-label::before, .form-control:focus {
+  border-color: var(--simpler-lime-green);
+  box-shadow: 0px 1px 1px rgba(0,0,0,.075) inset, 0px 0px 8px var(--simpler-lime-green-a0-6);
 }
 
 /* media queries to accomodate different screensizes  */
