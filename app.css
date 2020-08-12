@@ -97,6 +97,23 @@ body {
   transition: background 400ms;
 }
 
+input[type="checkbox"]:checked {
+      background: var(--scuffed-dark-grey);
+}
+
+/* Bootstrap overrides */
+.btn-primary{
+  color: var(--vanilla-grey);
+  background-color: var(--scuffed-dark-grey);
+  border-color: var(--white-ish);
+}
+
+.btn-primary:hover{
+  background-color: var(--vanilla-grey);
+  color: var(--scuffed-dark-grey);
+  border-color: var(--scuffed-dark-grey);
+}
+
 /* media queries to accomodate different screensizes  */
 @media only screen and (max-width: 1600px){
   #headings > h1 {
